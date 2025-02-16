@@ -9,10 +9,10 @@
 <p>☁️ Full-Width Shadow Effect: Logo section with a sleek shadow spanning the entire sidebar.</p>
 <br>
 <h2>🛠️ Technologies Used</h2>
-<h3>HTML5</h3>
-<h3>CSS3 (Flexbox, Transitions, Box Shadows)</h3>
-<h3>Google Fonts (Quicksand)</h3>
-<h3>Font Awesome Icons</h3>
+<h4>HTML5</h4>
+<h4>CSS3 (Flexbox, Transitions, Box Shadows)</h4>
+<h4>Google Fonts (Quicksand)</h4>
+<h4>Font Awesome Icons</h4>
 <br>
 <h2>🎯 How It Works</h2>
 <p>Sidebar Toggle: The sidebar appears/disappears based on a hidden checkbox input.</p>
