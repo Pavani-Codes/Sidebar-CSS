@@ -17,3 +17,7 @@
 <h2>🎯 How It Works</h2>
 <p>Sidebar Toggle: The sidebar appears/disappears based on a hidden checkbox input.</p>
 <p>Box Shadows: The title has a full-width shadow effect, and menu items have hover shadows for interactivity.</p>
+## 🌐 Live Demo  
+[Live Demo](https://pavani-codes.github.io/Sidebar-CSS/)
+
+
