@@ -1,0 +1,161 @@
+*{
+    font-family: "Quicksand", serif;
+    padding: 0;
+    margin: 0;
+}
+
+.main_box{
+    background: url("cafe.jpg") no-repeat center center/cover;
+    height: 100vh;
+}
+
+.button_one{
+    position: absolute;
+    color: white;
+    font-size: 28px;
+    left: 10px;
+    top: 2.2rem;
+}
+
+.sidebar_menu{
+    position: absolute;
+    height: 100%;
+    width: 350px;
+    background-color: rgba(255,255,255,0.4);
+    box-shadow: 0 0 11px rgba(255,255,255,0.4); 
+    left: -350px;  
+}
+.logo {
+    position: absolute;
+    color: white;
+    font-size: 27px;
+    top: 1.2rem;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 2px 6px rgba(255, 255, 255, 0.4);
+    padding: 15px 0;
+}
+
+.button_two{
+    color: white;
+    position: absolute;
+    left: 20.1rem;
+    top: 2.5rem;
+    font-size: 20px;
+}
+
+.menu{
+    position: relative;
+    top: 6.5rem;
+    width: 99%;
+    height: 500px;
+}
+.menu ul li{
+    list-style: none;
+    font-size: 23px;
+    color: white; 
+}
+.menu ul li p{
+    transition: box-shadow 0.3s ease;
+    cursor: pointer;
+    padding: 18px;
+}
+.menu ul li p:hover{
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.7);
+}
+
+.social_media{
+    color: white;
+    position: absolute;
+    opacity: 0.7;
+    bottom: 12px;
+    left: 80px; 
+    padding:9px;
+}
+.social_media a i{
+    color: white;
+    opacity: 0.5;
+    font-size: 25px;
+    padding: 5px;
+}
+ .social_media a i:hover{
+    opacity: 1;
+    color: white;
+    font-size: 27px;
+ }  
+#check {
+    display: none;
+}
+#check:checked ~ .sidebar_menu{
+    left: 0;
+}
+
+#check:checked ~ .button_one i{
+    opacity: 0;
+}
+#check:checked ~ .sidebar_menu .button_two i{
+    opacity: 1;
+}
+.sidebar_menu .menu li:hover {
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.7);
+}
+
+.button_one i:hover {
+    font-size: 2rem;
+}
+
+.button_two i:hover {
+    font-size: 1.5rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .sidebar_menu {
+        width: 250px;
+        left: -250px;
+    }
+    .button_two {
+        left: 16rem;
+    }
+    .logo {
+        font-size: 22px;
+    }
+    .menu ul li {
+        font-size: 20px;
+    }
+}
+
+/* Adjust button positions for mobile */
+@media (max-width: 480px) {
+    .button_one {
+        left: 5px;
+        top: 1.5rem;
+        z-index: 2;
+    }
+
+    .button_two {
+        left: 12.5rem; /* Adjusted for smaller sidebar */
+        top: 1.5rem;
+        z-index: 3;
+    }
+
+    #check:checked ~ .button_one i {
+        display: none;
+    }
+
+    #check:not(:checked) ~ .sidebar_menu .button_two i {
+        display: none;
+    }
+
+    .sidebar_menu {
+        width: 200px;
+        left: -200px;
+    }
+
+    .menu {
+        top: 7rem;
+    }
+}
+
